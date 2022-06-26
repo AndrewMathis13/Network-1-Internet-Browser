@@ -102,6 +102,9 @@
 				width: 48px;
 				height: auto;
 			}
+			.PageEmbed{
+				bottom: 10px;
+			}
 		</style>
 	</head>
 	<body>
@@ -159,12 +162,18 @@
  			 }
 			}
 		</script>
-		<div>
-			<!--<embed type="text/html"
-    			src="https://benjmathis1.github.io/Network-1-Internet-Browser/Pages/Error"
-				width="250"
-   				height="200">-->
-				<embed src="https://benjmathis1.github.io/Network-1-Internet-Browser/Pages/Error_404.html" style="width: 100%;height: 90%;">
+		<div class="PageEmbed">
+			<iframe src="https://benjmathis1.github.io/Network-1-Internet-Browser/Pages/Error_404.html"
+				 width="100%" height="500" allowfullscreen sandbox>
+ 				<p>
+					<!--<a href="/en-US/docs/Glossary">
+						Fallback link for browsers that don't support iframes
+				 	</a>-->
+			   </p>
+			</iframe>
 		</div>
+		<!--<div style="height: auto;">
+				<embed src="https://benjmathis1.github.io/Network-1-Internet-Browser/Pages/Error_404.html" style="width: 100%;height: 100%;">
+		</div>-->
 	</body>
 </html>
